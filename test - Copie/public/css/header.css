@@ -1,0 +1,82 @@
+/*set la font pour tous le site*/
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+    height:100%;
+}
+
+/*header flex*/
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #efefef;
+}
+
+/*div flex grow entre les elements du header*/
+.space {
+    flex-grow: 0.4;
+}
+html{
+    background-color: #fff;
+}
+
+/*Header CSS*/
+header h1,
+header h2,
+header h4 {
+    color: #626466;
+}
+
+header h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+header h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+ 
+a {
+    text-decoration: none;
+    color:#626466;
+   
+}
+header a{
+     padding: 40px;
+    text-transform: uppercase;
+}
+
+.appbar #myLinks{
+    padding:28px;
+}
+.appbar a.icon{
+    display: none;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+.w3-display-container{
+    position:relative;
+}
+
+
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+.w3-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+}

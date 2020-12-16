@@ -1,0 +1,6 @@
+
+
+
+<div>
+@yield('footer')
+</div>

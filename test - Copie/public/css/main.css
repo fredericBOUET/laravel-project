@@ -1,0 +1,324 @@
+
+    /*slider*/
+
+    .mySlides {display:none;}
+
+    /* content index */
+
+    #wrapper{
+        display:flex;
+        width:100%;
+    }
+
+    #wrapper{
+        display:flex;
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #wrapper .contentBiere{
+        width:20%;
+        margin-top:50px;
+        text-align:center;
+    }
+
+    .fa-star {
+        color:grey;
+    }
+    .activeFavorite{
+        color:yellow;
+    }
+    /* connexion */ 
+    .log{
+        text-align: center;
+        padding-top:200px;
+         min-height: 58vh;
+    }
+    
+    .hidden
+    {
+        display: none;
+    }
+
+    
+    /* gestion bieres*/
+    
+    table {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 90%;
+      margin:0 auto;
+    }
+    
+    table td, table th {
+      border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    table tr:nth-child(even){background-color: #c4c4c4;}
+    table tr:nth-child(odd){background-color: #e4e4e4;}
+    
+    table tr:hover {background-color: #ddd;}
+    
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #222222;
+      color: white;
+    }
+    
+    .gestionTop{
+        display: flex;
+    }
+    .space2 {
+        flex-grow: 0.9;
+    }
+    .gestionTop a{
+        margin:30px;
+    }
+    .gestionTop h1{
+        margin-left:20px;
+    }
+
+    /* corbeille*/
+    .formCorbeille{
+        padding:30px;
+    }
+    #submitCorbeille{
+        margin:10px 50px 10px 100px;
+    }
+
+
+    /* MODAL */ 
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+    /* form*/
+
+    .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+    .btn {
+        color: rgb(87, 87, 87);
+        background-color: #cecece;
+        border-color: #b6b6b6;
+        margin-top:10px;
+        margin-bottom:10px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .description{
+        display:block;
+    }
+    .titrePageAdmin{
+        text-align: center;
+    }
+    textarea {
+        width: 500px;
+        height: 120px;
+        border: 3px solid #cccccc;
+        padding: 5px;
+        font-family: Tahoma, sans-serif;
+        background-image: url(bg.gif);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
+    form input[type=text], form input[type=password], form input[type=email]{
+        border: 3px solid #cccccc;
+        padding: 5px;
+        font-family: Tahoma, sans-serif;
+        background-image: url(bg.gif);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
+
+    .containerForm {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        clear: both;
+
+    }
+      
+    .containerForm input {
+        width: 100%;
+        clear: both;
+    }
+
+    .form-group{
+        margin-top:10px;
+    }
+    /* page une biere */
+    .aBiere{
+        margin: 28px;
+    }
+
+    .aBiere img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    /* footer */
+    footer{
+        background-color: #efefef;
+        color:#626466;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        margin-top: auto;
+    }
+    
+    footer p{
+        padding-top:50px;
+    }
+    
+    /*  ordinateur 1024 */
+    @media only screen and (max-device-width: 1024px){
+        #wrapper .contentBiere{
+            width:33.3%;
+            margin-top:50px;
+            text-align:center;
+        }
+
+        #wrapper .contentBiere img{
+            width:40%;
+        }
+    }
+    /*tablette*/
+    @media only screen and (max-device-width: 768px){
+        .gestionTop h1{
+            font-size:22px;
+        }
+        .gestionTop a{
+            margin:20px;
+        }
+        .cache2{
+            display:none;
+        }
+        header a{
+            font-size:12px;
+            padding-top:40px;
+            padding-right:20px;
+            padding-left:20px;
+            padding-bottom:40px;
+        }
+        #submitCorbeille{
+            margin:10px 50px 10px 50px;
+        }
+    }
+    /* telephone */
+    @media only screen and (max-device-width: 480px){
+        #wrapper .contentBiere{
+            width:100%;
+            text-align:center;
+            margin-top:10px;
+        }
+    body{
+        font-size:12px;
+    }
+    textarea {
+        width: 100%;
+        height: 120px;
+        border: 3px solid #cccccc;
+        padding: 5px;
+        font-family: Tahoma, sans-serif;
+        background-image: url(bg.gif);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    .cache{
+        display:none;
+    }
+    
+    .appbar {
+    padding-left: 30px;
+        
+    }
+    
+    .appbar #myLinks {
+        display:none;
+        top: 60px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color:#efefef;
+        border-bottom: 2px solid #626466;
+        padding:0px
+    
+    }
+    header{
+        position:relative;
+    }
+    .appbar a {
+      color: #626466;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .appbar a.icon {
+      background: #efefef;
+      display: block;
+      position: absolute;
+      right: 0;
+          top: 7px;
+    
+    }
+    
+    .appbar a:hover {
+      color: black;
+    }
+    
+
+    }
+    @media only screen and (max-device-width: 480px){
+    #submitCorbeille{
+        margin:10px 50px 10px 20px;
+    }
+
+    .formCorbeille{
+        padding:0px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+}
